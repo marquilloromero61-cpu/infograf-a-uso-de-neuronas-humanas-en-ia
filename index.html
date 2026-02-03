@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de neuronas humanas para IA</title>
+    <style>
+        /* --- ESTILOS GENERALES (CSS) --- */
+        :root {
+            --color-fondo: #f4f4f936;
+            --color-texto: #333;
+            --color-primario: #2563eb; /* Azul para los botones */
+            --color-primario-hover: #1d4ed8;
+            --color-borde: #ddd;
+            --max-ancho: 1000px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+
+        /* Contenedor principal para centrar el contenido */
+        .contenedor {
+            max-width: var(--max-ancho);
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* --- CABECERA --- */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--color-borde);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* --- SECCIÓN DE TEXTO --- */
+        .seccion-texto {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            text-align: center; /* Puedes cambiar a 'left' si quieres alineado a la izquierda */
+        }
+
+        .seccion-texto h2 {
+            margin-top: 0;
+            color: var(--color-primario);
+        }
+
+        .seccion-texto p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* --- SECCIÓN DE IMÁGENES (4 Espacios) --- */
+        .seccion-imagenes {
+            margin-bottom: 60px;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo */
+            gap: 20px;
+        }
+
+        .imagen-card {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .imagen-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .imagen-card img {
+            width: 100%;
+            height: 200px; /* Altura fija para uniformidad */
+            object-fit: cover; /* Para que la imagen no se deforme */
+            border-radius: 4px;
+            display: block;
+        }
+
+        .imagen-card figcaption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* --- SECCIÓN DE ENLACES (3 Espacios) --- */
+        .seccion-enlaces {
+            text-align: center;
+        }
+
+        .lista-enlaces {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-enlace {
+            display: inline-block;
+            background-color: var(--color-primario);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-enlace:hover {
+            background-color: var(--color-primario-hover);
+            transform: scale(1.05);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 20px;
+            border-top: 1px solid var(--color-borde);
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Adaptabilidad para móviles */
+        @media (max-width: 600px) {
+            .seccion-texto {
+                padding: 25px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .lista-enlaces {
+                flex-direction: column; /* Botones uno encima del otro en móvil */
+            }
+            .btn-enlace {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        
+        <!-- Cabecera simple -->
+        <header>
+            <!-- EDITA EL TÍTULO PRINCIPAL AQUÍ -->
+            <h1>Uso de Neuronas Humanas para IA</h1>
+            <!-- EDITA EL SUBTÍTULO AQUÍ -->
+            <p>como y porque se usan neuronas humanas para el desarrollo de inteligencia artificial</p>
+        </header>
+
+        <main>
+            <!-- 1. ESPACIO PARA ESCRIBIR TU TEXTO -->
+            <section class="seccion-texto">
+                <h2>porque se usan neuronas humanas para IA</h2>
+                <!-- Escribe tu contenido dentro de este <p> -->
+                <p>
+                    se usan para estudiar el comportamiento de ellas,
+                    facilitando el entendimiento de cómo funcionan 
+                    los sistemas neuronales humanos. 
+                </p>
+                <p>
+                    Además, las neuronas humanas pueden proporcionar 
+                    datos valiosos sobre la plasticidad cerebral, 
+                    la memoria y el aprendizaje, que son fundamentales 
+                    para desarrollar algoritmos de inteligencia artificial 
+                    más avanzados y eficientes.
+                </p>
+            </section>
+
+            <!-- 2. 4 ESPACIOS PARA IMÁGENES -->
+            <section class="seccion-imagenes">
+                <h3 class="titulo-sección">Galería de Imágenes</h3>
+                <div class="galeria">
+                    
+                    <!-- IMAGEN 1 -->
+<figure class="imagen-card">
+    <!-- Corregido para asegurar que carga -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Neuron.svg" alt="diagrama de una neurona">
+    <figcaption>diagrama de una neurona</figcaption>
+</figure>
+
+<!-- IMAGEN 2 -->
+<figure class="imagen-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Neuron_no_labels.svg" alt="estructura de una neurona">
+    <figcaption>estructura de una neurona</figcaption>
+</figure>
+
+<!-- IMAGEN 3 -->
+<figure class="imagen-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Neural_tissue.jpg" alt="tejido neural">
+    <figcaption>tejido neural</figcaption>
+</figure>
+
+<!-- IMAGEN 4 (CORREGIDA: Se agregó https:) -->
+<figure class="imagen-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Neurons_in_culture.jpg" alt="neuronas en cultivo">
+    <figcaption>neuronas en cultivo</figcaption>
+</figure>
+                </div>
+            </section>
+
+            <!-- 3. 3 ESPACIOS PARA ENLACES -->
+            <section class="seccion-enlaces">
+                <h3 class="titulo-sección">para consultar más información</h3>
+                <div class="lista-enlaces">
+                    
+                    <!-- ENLACE 1: Cambia href="#" por tu web y el texto visible -->
+                    <a href="https://corticallabs.com/" class="btn-enlace">Es la empresa pionera que creó "DishBrain</a>
+
+                    <!-- ENLACE 2 -->
+                    <a href="https://finalspark.com/" class="btn-enlace">Esta startup suiza lanzó la Neuroplatform</a>
+
+                    <!-- ENLACE 3 -->
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5720432/" class="btn-enlace">Artículo Científico</a>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2025 marquillo romero, proyecto para la profe dolores.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
